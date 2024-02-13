@@ -2,6 +2,12 @@
 
 Documentation for the API backend can be found at Swagger. (http://3.86.93.165:8000/docs/)
 
+## Installation
+
+- To run the server locally, make ```.env.dev``` and keep it empty.
+- Run ```docker-compose up --build```
+- Access it on ```localhost:8000/docs```
+
 Swagger Steps:
 - Register a user.
 - Authenticate the user and you'll get an access token.
