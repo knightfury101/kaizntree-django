@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  web:
+    build:
+      context: .
+    container_name: kaizntree_backend
+    entrypoint:
+      - /docker-entrypoint.sh
+    volumes:
+      - .:/kaizntree_backend
+    ports:
+      - 8000:8000
+    env_file:
+      - ./.env.dev
