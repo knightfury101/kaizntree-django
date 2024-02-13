@@ -13,8 +13,8 @@ class TagSerializer(serializers.ModelSerializer):
         fields = ['id', 'tag_title']
 
 class ProductSerializer(serializers.ModelSerializer):
-    category = CategorySerializer(many = True)
-    tags = TagSerializer(many = True)
+    # category = CategorySerializer(many = True)
+    # tags = TagSerializer(many = True)
     user = serializers.HiddenField(default=serializers.CurrentUserDefault())
     class Meta:
         model = Product
